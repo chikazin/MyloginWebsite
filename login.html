@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <title>登录界面</title>
+    <style>
+        div {
+            margin: 230px auto;
+            width: 230px;
+            height: 165px;
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <form method="post" action="login.php" style="margin:20px;">
+        <label>
+            账号：
+            <input name="Username" required autofocus>
+        </label>
+        <label>
+            密码：<input name="Password" type="password" required>
+        </label>
+        <label>
+            <input type="checkbox" name="remember" value="yes" checked>24小时内记住登录状态
+        </label>
+        <input name="login" type="submit" value="登录">
+        <a href="register.html">注册</a>
+    </form>
+</div>
+</body>
+</html>
